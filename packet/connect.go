@@ -19,25 +19,25 @@ var version31Name = []byte("MQIsdp")
 // connection has been established.
 type Connect struct {
 	// The clients client id.
-	ClientID string
+	ClientID string `json:"client_id"`
 
 	// The keep alive value.
-	KeepAlive uint16
+	KeepAlive uint16 `json:"keep_alive"`
 
 	// The authentication username.
-	Username string
+	Username string `json:"username"`
 
 	// The authentication password.
-	Password string
+	Password string `json:"password"`
 
 	// The clean session flag.
-	CleanSession bool
+	CleanSession bool `json:"clean_session"`
 
 	// The will message.
-	Will *Message
+	Will *Message `json:"-"`
 
 	// The MQTT version 3 or 4 (defaults to 4 when 0).
-	Version byte
+	Version byte `json:"version"`
 }
 
 // NewConnect creates a new Connect packet.
