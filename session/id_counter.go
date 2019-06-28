@@ -3,7 +3,7 @@ package session
 import (
 	"sync"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // An IDCounter continuously counts packet ids.

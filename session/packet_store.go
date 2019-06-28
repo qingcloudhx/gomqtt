@@ -3,7 +3,7 @@ package session
 import (
 	"sync"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // PacketStore is a goroutine safe packet store.

@@ -3,7 +3,7 @@
 package session
 
 import (
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // Direction denotes a packets direction.

@@ -3,8 +3,8 @@ package client
 import (
 	"time"
 
-	"github.com/256dpi/gomqtt/client/future"
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/client/future"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // A GenericFuture is returned by publish and unsubscribe methods.

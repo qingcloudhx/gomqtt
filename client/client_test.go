@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/256dpi/gomqtt/client/future"
-	"github.com/256dpi/gomqtt/packet"
-	"github.com/256dpi/gomqtt/session"
-	"github.com/256dpi/gomqtt/transport"
-	"github.com/256dpi/gomqtt/transport/flow"
+	"github.com/qingcloudhx/gomqtt/client/future"
+	"github.com/qingcloudhx/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/session"
+	"github.com/qingcloudhx/gomqtt/transport"
+	"github.com/qingcloudhx/gomqtt/transport/flow"
 
 	"github.com/stretchr/testify/assert"
 )

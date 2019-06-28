@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/256dpi/gomqtt/transport"
+	"github.com/qingcloudhx/gomqtt/transport"
 
 	"gopkg.in/tomb.v2"
 )

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/256dpi/gomqtt/client"
-	"github.com/256dpi/gomqtt/packet"
-	"github.com/256dpi/gomqtt/spec"
+	"github.com/qingcloudhx/gomqtt/client"
+	"github.com/qingcloudhx/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/spec"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

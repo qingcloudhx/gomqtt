@@ -3,7 +3,7 @@ package transport
 import (
 	"fmt"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 func Example() {

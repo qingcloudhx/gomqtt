@@ -3,7 +3,7 @@ package spec
 import (
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 func safeReceive(ch chan struct{}) {

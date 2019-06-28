@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // A Conn is a connection between a client and a broker. It abstracts an

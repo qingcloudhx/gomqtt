@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/256dpi/gomqtt/client"
-	"github.com/256dpi/gomqtt/packet"
 	"github.com/abiosoft/ishell"
+	"github.com/qingcloudhx/gomqtt/client"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 var broker = flag.String("broker", "tcp://0.0.0.0:1883", "broker url")

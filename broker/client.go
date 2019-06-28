@@ -5,9 +5,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
-	"github.com/256dpi/gomqtt/session"
-	"github.com/256dpi/gomqtt/transport"
+	"github.com/qingcloudhx/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/session"
+	"github.com/qingcloudhx/gomqtt/transport"
 
 	"gopkg.in/tomb.v2"
 )
@@ -21,6 +21,9 @@ const (
 
 	// PacketReceived is emitted when a packet has been received.
 	PacketReceived LogEvent = "packet received"
+
+	// NewConnection is emitted when a client comes online.
+	LoginConnectSuccess LogEvent = "login connection"
 
 	// MessagePublished is emitted after a message has been published.
 	MessagePublished LogEvent = "message published"
@@ -526,6 +529,7 @@ func (c *Client) processConnect(pkt *packet.Connect) error {
 		c.MaximumKeepAlive = 5 * time.Minute
 	}
 
+	c.backend.Log(LoginConnectSuccess, c, pkt, nil, nil)
 	// get requested keep alive
 	requestedKeepAlive := time.Duration(pkt.KeepAlive) * time.Second
 

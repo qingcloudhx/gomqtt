@@ -3,7 +3,7 @@ package client
 import (
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 )
 
 // ClearSession will connect to the specified broker and request a clean session.

@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
-	"github.com/256dpi/gomqtt/session"
-	"github.com/256dpi/gomqtt/topic"
+	"github.com/qingcloudhx/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/session"
+	"github.com/qingcloudhx/gomqtt/topic"
 )
 
 type memorySession struct {

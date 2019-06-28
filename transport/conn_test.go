@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/packet"
 
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"

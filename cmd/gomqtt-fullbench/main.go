@@ -13,8 +13,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/256dpi/gomqtt/client"
-	"github.com/256dpi/gomqtt/packet"
+	"github.com/qingcloudhx/gomqtt/client"
+	"github.com/qingcloudhx/gomqtt/packet"
 
 	"github.com/juju/ratelimit"
 )
