@@ -1,6 +1,7 @@
 package broker
 
 import (
+	"encoding/json"
 	"errors"
 	"sync/atomic"
 	"time"
@@ -528,8 +529,13 @@ func (c *Client) processConnect(pkt *packet.Connect) error {
 	if c.MaximumKeepAlive <= 0 {
 		c.MaximumKeepAlive = 5 * time.Minute
 	}
-
-	c.backend.Log(LoginConnectSuccess, c, pkt, nil, nil)
+	// todo add callback
+	data, _ := json.Marshal(pkt)
+	pkg := &packet.Message{
+		Topic:   "",
+		Payload: data,
+	}
+	c.backend.Log(LoginConnectSuccess, c, pkt, pkg, nil)
 	// get requested keep alive
 	requestedKeepAlive := time.Duration(pkt.KeepAlive) * time.Second
 
